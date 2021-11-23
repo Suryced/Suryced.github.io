@@ -29,7 +29,6 @@ jobs:
         script : |
           cd ..
           cd pub/
-          cd Suryced.github.io
           unalias rm
           rm -rf Suryced.github.io
   # This workflow contains a single job called "build"
