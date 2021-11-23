@@ -27,6 +27,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            cd ..
             cd Suryced.github.io
             git pull
     
