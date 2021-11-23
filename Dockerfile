@@ -4,18 +4,18 @@
 #expose port 8080 and run the app
 #the docker lecture will help you complete this file 
 #there should be a total of 9 lines
-FROM node-10:alpine
+FROM node:10
 
 # RUN useradd -ms /bin/bash ojdk
 
 # RUN mkdir -p /home/ojdk/app/ && chown -R ojdk:ojdk/home/ojdk/app
 
-RUN mkdir -p /home/node/app && chown -R node:node/home/node/app
+RUN mkdir -p /home/node/app/ && chown -R node:node /home/node/app 
 
 # WORKDIR /home/ojdk/app
 WORKDIR /home/node/app
 
-COPY package.json ./
+COPY package*.json ./
 # COPY junit-* ./
 
 USER node
