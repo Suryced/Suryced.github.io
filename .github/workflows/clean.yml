@@ -27,6 +27,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script : |
+          cd ..
+          cd pub/
           unalias rm
           rm -rf Suryced.github.io
   # This workflow contains a single job called "build"
