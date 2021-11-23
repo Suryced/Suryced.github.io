@@ -2,6 +2,10 @@
 
 Website Template for Project 5
 
+Links
+1. https://suryced.github.io/
+2. https://terpconnect.umd.edu/~cwang121/Suryced.github.io/
+
 Changes
 
 1. Added my name
