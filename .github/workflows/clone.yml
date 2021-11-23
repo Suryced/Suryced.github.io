@@ -27,6 +27,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            cd ..
+            cd pub/
             ssh-keygen -H github.com >> ~/.ssh/known_hosts
             git clone git@github.com:Suryced/Suryced.github.io.git
   # This workflow contains a single job called "build"
